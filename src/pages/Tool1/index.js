@@ -9,7 +9,7 @@ function Tool() {
   const submitID = async ()=>{
     await axios({
       method: 'POST',
-      url: 'http://localhost:3060/register',
+      url: 'https://backend-nam.herokuapp.com/register',
       data: {
         username: name,
         password: pass

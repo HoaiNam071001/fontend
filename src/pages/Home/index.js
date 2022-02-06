@@ -9,7 +9,7 @@ function App() {
     const fetchData = async () => {
       setIsLoading(false);
       const result = await axios(
-        'http://localhost:3060/'
+        'https://backend-nam.herokuapp.com/'
       ).catch(error => console.log(error));
       setDatas({ "user": result.data});
       setIsLoading(true);
